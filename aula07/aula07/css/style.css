@@ -1,0 +1,26 @@
+table, th, td{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+.coluna2{
+    /* background-color: lightblue; */
+}
+
+thead{
+    background-color: royalblue;
+    color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: lightgray;
+}
+
+tfoot{
+    background-color: #229;
+    color: white;
+}
