@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.teste1{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: lightcoral;
+    border: 2px solid black;
+    width: 50%;
+    height: 30%;
+    border-width: 2px 4px 6px 8px;
+    border-style: dashed dotted double groove;
+    border-color: red blue green yellow;
+    padding: 10px;
+
+    box-shadow: 2px 2px 3px black;
+    box-sizing: 400px;
+}
+
+.teste2{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.teste3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.teste4{
+    font-size: 2em; /*em se adapta ao tamanho do elemento em que está*/
+    /*Nesse caso, cada em tá valendo 16px*/
+}
+
+div{
+    font-size: 20px;
+}
+
+.teste5{
+    background-color: lightgoldenrodyellow;
+    width: 800px;
+    max-width: 800px;
+    font-size: 100%;
+}
+
+.teste6{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.teste7{
+    font-variant: small-caps;
+    text-align: justify;
+}
+
+.teste8{
+    text-transform: capitalize;
+}
+
+.teste9{
+    text-decoration: underline double blue;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.teste10{
+    text-shadow: 2px 2px 2px;
+    line-height: 18px;
+    letter-spacing: 1px;
+}
