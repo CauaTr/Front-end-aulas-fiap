@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplos de Formulários</h1>
+
+    <form action="cadastro" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <label for="idNome">Nome:</label>
+            <input type="text" name="nome" id="idNome"> <br>
+
+            <label for="idEmail">Email:</label>
+            <input type="email" name="email" id="idEmail"> <br>
+
+            <label for="idSenha">Senha:</label>
+            <input type="password" name="senha" id="idSenha"> <br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Outros Campos</legend>
+
+            <label for="idBusca">Busca</label>
+            <input type="search" name="busca" id="idBusca">
+
+            <label for="idSite">Site</label>
+            <input type="url" name="site" id="idSite">
+
+            <label for="idTelefone">Phone:</label>
+            <input type="tel" name="telefone" id="idTelefone">
+
+            <label for="idData">Data:</label>
+            <input type="date" name="data" id="idData">
+
+            <label for="idHora">Hora:</label>
+            <input type="time" name="hora" id="idHora">
+
+            <label for="idReuniao">Reunião:</label>
+            <input type="datetime-local" name="reuniao" id="idReuniao">
+
+            <label for="idMes">Mês:</label>
+            <input type="month" name="mes" id="idMes">
+
+            <label for="idSemana">Semana:</label>
+            <input type="week" name="semana" id="idSemana">
+
+            <label for="idQuantidade">Quantidade:</label>
+            <input type="number" name="quantidade" id="idQuantidade" step="5" min="0" max="50">
+
+            <label for="idRange">Tamanho:</label>
+            <input type="range" name="range" id="idRange">
+        </fieldset>
+
+        <fieldset>
+            <legend>Manequim</legend>
+            <input type="radio" name="tam-roupa" id="idP" value="peq"><label for="">Pequeno</label>
+            <input type="radio" name="tam-roupa" id="idM" value="med"><label for="">Médio</label>
+            <input type="radio" name="tam-roupa" id="idG" value="gran"><label for="">Grande</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cores</legend>
+            <input type="checkbox" name="cores" id="idAzul" value="azul"><label for="idAzul">Azul</label>
+            <input type="checkbox" name="cores" id="idVermelho" value="vermelho"><label for="idVermelho">Vermelho</label>
+            <input type="checkbox" name="cores" id="idVerde" value="verde"><label for="idVerde">Verde</label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Modelos</legend>
+
+            <label for="idObs">Observações</label>
+            <textarea name="obs" id="idObs"></textarea> <br>
+            <label for="idEstilo">Estilos</label>
+            <select name="estilo" id="idEstilo">
+                <optgroup label="clássicos">
+                    <option value="501">Esporte</option>
+                    <option value="502">Social</option>
+                    <option value="503">Casual</option>
+                </optgroup>
+                <optgroup label="especiais">
+                    <option value="504">Rock</option>
+                    <option value="505">Praia</option>
+                    <option value="506">Acampamento</option>
+                </optgroup>
+            </select>
+        </fieldset>
+    </form>
+</body>
+</html>
