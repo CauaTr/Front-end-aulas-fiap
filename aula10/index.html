@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <h1 id="titulo">Introdução JavaScript</h1>
+
+    <label for="">Texto</label>
+    <input type="text" name="" id="texto">
+    <button onclick="mudar()">Texto do Título</button>
+    <!-- ************************************************** -->
+
+
+
+    <p class="noticia">lorem1</p>
+    <p class="noticia">lorem2</p>
+    <p class="noticia">lorem3</p>
+
+    <h2>Exemplo por Classe</h2>
+
+    <p>Primeiro: <span class="corredor"></span></p>
+    <p>Segundo: <span class="corredor"></span></p>
+    <p>Terceiro: <span class="corredor"></span></p>
+
+    <label for="">Novo Classificado</label>
+    <input type="text" id="novo">
+    <label for="">Posição</label>
+    <input type="number" id="posicao" min="1" max="3">
+    <button onclick="inserir()">Inserir</button>
+
+    <script>
+        function inserir(){
+            let novo = document.getElementById('novo').value
+            let posicao = document.getElementById('posicao').value -1
+            document.getElementsByClassName('corredor')[posicao].innerHTML = novo
+        }
+    </script>
+
+    <!-- ************************************************************************** -->
+
+    <h2>Exemplo do TagName</h2>
+
+    <ul>
+        <li>Janeiro</li>
+        <li>Fevereiro</li>
+        <li>Março</li>
+        <li>Abril</li>
+        <li>Maio</li>
+        <li>Junho</li>
+        <li>Julho</li>
+        <li>Agosto</li>
+        <li>Setembro</li>
+        <li>Outubro</li>
+        <li>Novembro</li>
+        <li>Dezembro</li>
+    </ul>
+
+    <label for="">Escolha um Mês</label>
+    <input type="number" id="numero" min="1" max="12">
+    <button onclick="mostrar()">Mostrar</button>
+
+    <p>Mês Escolhido: <span id="resultado"></span></p>
+
+    <script>
+        function mostrar(){
+            let novo = document.getElementById('numero').value -1
+            let mes = document.getElementsByTagName('li')[novo].innerHTML
+            document.getElementById('resultado').innerHTML = mes
+        }
+    </script>
+
+    <label for="">Cor</label>
+    <input type="color" id="idcor">
+    <button onclick="mudarCor()">Mudar</button>
+    <div class="caixa">aqui muda a cor</div>
+
+    <script>
+        function mudarCor(){
+            let cor = document.getElementById('idcor').value
+            document.getElementsByClassName('caixa')[0].style.color = cor
+        }
+    </script>
+</body>
+</html>
