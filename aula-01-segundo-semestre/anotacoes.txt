@@ -1,0 +1,5 @@
+Ctrl + c (no terminar) = finaliza o projeto
+npm run dev = inicia o projeto
+
+A pasta "node_modules" não vai para o github quando você versiona o projeto. Para recupera-la na hora
+de fazer outro projeto, utilize o comando "npm install" no terminal.
