@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.tarefa {
+  background-color: #ffb;
+  border: 2px solid #333;
+  box-shadow: 5px 5px 5px #333;
+  padding: 20px;
+  text-align: center;
+  width: 350px;
+  height: 150px;
+  margin: 10px;
+  position: relative;
+}
+
+.tarefa h2,
+.tarefa p {
+  padding-bottom: 10px;
+}
+
+.tarefa button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.lista-tarefas{
+  min-height: 100vh;
+  padding: 10px;
+  background-color: #cff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
